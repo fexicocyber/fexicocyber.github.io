@@ -1,0 +1,78 @@
+*{
+ padding: 0;
+ margin: 0;
+ font-family: 'Courgette', cursive;
+ user-select: none;
+ user-zoom: none;
+}
+
+.material-icons-outlined.white{
+ color: white;
+}
+.material-icons-round.white{
+ color: white;
+}
+.material-icons-sharp.white{
+ color: white;
+}
+
+
+body{
+ width: 100vw;
+ height: 100vh;
+ background-image: url("background.jpg");
+ background-size: cover;
+ background-position: center;
+ background-attachment: fixed;
+ overflow: hidden;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.bg-hitam{
+ position: fixed;
+ z-index: 1;
+ width: 0;
+ height: 0;
+ background-color: transparent;
+ transition: 0.5s ease, background-color 0.3s ease;
+}
+
+.bg-hitam.active{
+ width: 100vw;
+ height: 200vh;
+ background-color: black;
+}
+
+.halaman-sentuh-suratnya{
+ position: relative;
+ width: 100vw;
+ height: 30%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+.halaman-sentuh-suratnya > *{
+ filter: drop-shadow(0 0 10px rgba(0,0,0,0.7));
+}
+
+.halaman-sentuh-suratnya .surat-dariku{
+ font-size: 8em;
+ padding: 10px 50px;
+}
+
+.halaman-sentuh-suratnya .sentuh-suratnya{
+ position: relative;
+ color: white;
+ font-size: 1.2em;
+ font-style: italic;
+ font-family: Times;
+ font-weight: 900;
+ background-color: rgba(0,0,0,0.6);
+ padding: 4px 8px;
+ border-radius: 15px;
+}
+
